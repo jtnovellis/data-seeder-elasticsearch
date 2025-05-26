@@ -1,0 +1,36 @@
+[
+  {
+    "name": "epoc-san-search-hepatic-dosing-header",
+    "reindex": false,
+    "body": {
+      "mappings": {
+        "dynamic": "strict",
+        "properties": {
+          "title": {
+            "type": "text"
+          },
+          "comments": {
+            "type": "nested",
+            "properties": {
+              "type": {
+                "type": "keyword"
+              }
+            }
+          },
+          "published_at": {
+            "type": "text"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "settings": {
+        "index": {
+          "mapping": {
+            "coerce": true
+          }
+        }
+      }
+    }
+  }
+]
