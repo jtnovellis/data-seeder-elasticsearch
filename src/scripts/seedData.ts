@@ -30,14 +30,7 @@ function generateDocument(): Document {
     title: faker.lorem.sentence(),
     comments: comments,
     published_at: faker.date.recent().toISOString(),
-    author: faker.person.fullName(),
-    category: faker.helpers.arrayElement(['news', 'article', 'blog', 'tutorial']),
-    tags: Array.from(
-      { length: faker.number.int({ min: 1, max: 5 }) },
-      () => faker.word.sample()
-    ),
-    views: faker.number.int({ min: 0, max: 10000 }),
-    likes: faker.number.int({ min: 0, max: 500 }),
+    category: faker.helpers.arrayElement(['drug', 'lab', 'test', 'procedure']),
   };
 }
 

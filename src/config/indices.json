@@ -1,6 +1,6 @@
 [
   {
-    "name": "epoc-san-search-hepatic-dosing-header",
+    "name": "epoc-cms-search-hepatic-dosing-header",
     "reindex": false,
     "body": {
       "mappings": {
